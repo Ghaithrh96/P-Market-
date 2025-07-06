@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة تحكم البائع</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h2>لوحة تحكم المتجر: <span id="storeName"></span></h2>
+    <form onsubmit="addProduct(event)">
+      <h3>إضافة منتج جديد</h3>
+      <label>اسم المنتج:</label><br>
+      <input type="text" id="productName" required><br>
+      <label>السعر (Pi):</label><br>
+      <input type="number" id="productPrice" required step="0.1"><br><br>
+      <button type="submit">إضافة</button>
+    </form>
+    <h3>منتجات المتجر</h3>
+    <ul id="productList"></ul>
+  </main>
+  <script>
+    const store = localStorage.getItem('storeName');
+    document.getElementById('storeName').textContent = store || 'بدون اسم';
+
+    function addProduct(e) {
+      e.preventDefault();
+      const name = document.getElementById('productName').value;
+      const price = document.getElementById('productPrice').value;
+      const product = { name, price };
+      let products = JSON.parse(localStorage.getItem('myProducts') || '[]');
+      products.push(product);
+      localStorage.setItem('myProducts', JSON.stringify(products));
+      displayProducts();
+    }
+
+    function displayProducts() {
+      const list = document.getElementById('productList');
+      list.innerHTML = '';
+      const products = JSON.parse(localStorage.getItem('myProducts') || '[]');
+      products.forEach(p => {
+        const item = document.createElement('li');
+        item.textContent = `${p.name} - ${p.price} Pi`;
+        list.appendChild(item);
+      });
+    }
+
+    displayProducts();
+  </script>
+</body>
+</html>
