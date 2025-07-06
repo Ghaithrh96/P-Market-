@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P Market - Pi Network Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to P Market</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="create-store.html">Open Your Store</a>
+      <a href="seller-dashboard.html">Seller Dashboard</a>
+      <a href="user-dashboard.html">User Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+      <h2>Featured Products</h2>
+      <div class="product-list">
+        <div class="product"><img src="https://via.placeholder.com/150" alt="Phone" /><h3>Smartphone X</h3><p>1.2 Pi</p><button onclick="checkLogin()">Buy</button></div>
+        <div class="product"><img src="https://via.placeholder.com/150" alt="T-shirt" /><h3>Casual T-shirt</h3><p>0.3 Pi</p><button onclick="checkLogin()">Buy</button></div>
+        <div class="product"><img src="https://via.placeholder.com/150" alt="Headphones" /><h3>Wireless Headphones</h3><p>0.8 Pi</p><button onclick="checkLogin()">Buy</button></div>
+        <div class="product"><img src="https://via.placeholder.com/150" alt="Shoes" /><h3>Running Shoes</h3><p>0.6 Pi</p><button onclick="checkLogin()">Buy</button></div>
+        <div class="product"><img src="https://via.placeholder.com/150" alt="Watch" /><h3>Smart Watch</h3><p>1.5 Pi</p><button onclick="checkLogin()">Buy</button></div>
+        <div class="product"><img src="https://via.placeholder.com/150" alt="Blender" /><h3>Kitchen Blender</h3><p>0.4 Pi</p><button onclick="checkLogin()">Buy</button></div>
+        <div class="product"><img src="https://via.placeholder.com/150" alt="Sofa" /><h3>Luxury Sofa</h3><p>2.5 Pi</p><button onclick="checkLogin()">Buy</button></div>
+        <div class="product"><img src="https://via.placeholder.com/150" alt="Book" /><h3>Inspirational Book</h3><p>0.1 Pi</p><button onclick="checkLogin()">Buy</button></div>
+        <div class="product"><img src="https://via.placeholder.com/150" alt="Coffee Maker" /><h3>Coffee Maker</h3><p>0.9 Pi</p><button onclick="checkLogin()">Buy</button></div>
+        <div class="product"><img src="https://via.placeholder.com/150" alt="Gaming Console" /><h3>Gaming Console</h3><p>3.1 Pi</p><button onclick="checkLogin()">Buy</button></div>
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>About P Market</h2>
+      <p>P Market is a comprehensive marketplace for Pi Network users. Explore a wide range of products across electronics, clothing, home goods, books, and more — all available for browsing without registration. Register only when you wish to buy or sell.</p>
+      <p>Buyers can track their purchase history and total Pi spent through their dashboard. Sellers can open their own stores, manage inventory, and monitor their sales with powerful tools designed to grow their business.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 P Market. All rights reserved. | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a></p>
+  </footer>
+
+  <script>
+    function checkLogin() {
+      alert("Please login or create an account to proceed with the purchase.");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
