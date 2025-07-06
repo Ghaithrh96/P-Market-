@@ -103,5 +103,87 @@
       window.location.href = "login.html";
     }
   </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>P Market</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to P Market</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="create-store.html">Create Store</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+
+      <div class="product">
+        <img src="images/phone.jpg" alt="Phone">
+        <h3>Smartphone</h3>
+        <p>1.2 Pi</p>
+        <button onclick="checkLogin()">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="images/tshirt.jpg" alt="T-Shirt">
+        <h3>T-Shirt</h3>
+        <p>0.5 Pi</p>
+        <button onclick="checkLogin()">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="images/laptop.jpg" alt="Laptop">
+        <h3>Laptop</h3>
+        <p>4.5 Pi</p>
+        <button onclick="checkLogin()">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="images/book.jpg" alt="Book">
+        <h3>Book</h3>
+        <p>0.3 Pi</p>
+        <button onclick="checkLogin()">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="images/shoes.jpg" alt="Shoes">
+        <h3>Shoes</h3>
+        <p>0.9 Pi</p>
+        <button onclick="checkLogin()">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="images/watch.jpg" alt="Watch">
+        <h3>Watch</h3>
+        <p>0.8 Pi</p>
+        <button onclick="checkLogin()">Buy</button>
+      </div>
+
+    </section>
+
+    <section class="info">
+      <h2>About P Market</h2>
+      <p>P Market is a comprehensive Pi-powered marketplace.</p>
+      <p>Buyers can track their purchases and sellers manage their own store.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 P Market. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function checkLogin() {
+      alert("Please login or create an account to make a purchase.");
+      window.location.href = "login.html";
+    }
+  </script>
 </body>
 </html>
